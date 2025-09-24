@@ -14,13 +14,20 @@ configure_file(
 )
 
 # Find required packages
-find_package(Qt6 6.8 REQUIRED COMPONENTS Widgets OpenGLWidgets)
+find_package(Qt6 6.4 REQUIRED COMPONENTS Widgets OpenGLWidgets)
 find_package(OpenGL REQUIRED)
 find_package(GDCM REQUIRED)
 
 # Create executable
 set(SOURCES
     src/main.cpp
+    src/ui/MainWindow.cpp
+    src/ui/MainWindow.h
+    src/core/Volume3D.h
+    src/core/DicomSeriesLoader.h
+    src/core/DicomSeriesLoader.cpp
+    src/core/DicomSeriesManager.h
+    src/core/DicomSeriesManager.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
@@ -36,7 +43,10 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Widgets
     Qt6::OpenGLWidgets
     OpenGL::GL
-    GDCM::gdcmMSFF
+    gdcmMSFF
+    gdcmIOD
+    gdcmDSED
+    gdcmCommon
 )
 
 # MSVC specific compiler flags
