@@ -21,6 +21,13 @@ find_package(GDCM REQUIRED)
 # Create executable
 set(SOURCES
     src/main.cpp
+    src/ui/MainWindow.cpp
+    src/ui/MainWindow.h
+    src/core/Volume3D.h
+    src/core/DicomSeriesLoader.h
+    src/core/DicomSeriesLoader.cpp
+    src/core/DicomSeriesManager.h
+    src/core/DicomSeriesManager.cpp
 )
 
 add_executable(${PROJECT_NAME} ${SOURCES})
