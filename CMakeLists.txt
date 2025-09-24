@@ -14,7 +14,7 @@ configure_file(
 )
 
 # Find required packages
-find_package(Qt6 6.8 REQUIRED COMPONENTS Widgets OpenGLWidgets)
+find_package(Qt6 6.4 REQUIRED COMPONENTS Widgets OpenGLWidgets)
 find_package(OpenGL REQUIRED)
 find_package(GDCM REQUIRED)
 
@@ -36,7 +36,10 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     Qt6::Widgets
     Qt6::OpenGLWidgets
     OpenGL::GL
-    GDCM::gdcmMSFF
+    gdcmMSFF
+    gdcmIOD
+    gdcmDSED
+    gdcmCommon
 )
 
 # MSVC specific compiler flags
