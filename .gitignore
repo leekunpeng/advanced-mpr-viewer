@@ -1,0 +1,100 @@
+# Build directories
+build/
+Build/
+BUILD/
+out/
+Debug/
+Release/
+RelWithDebInfo/
+MinSizeRel/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+
+# Visual Studio
+.vs/
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.sln
+*.suo
+*.user
+*.ncb
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+.builds/
+*.pidb
+*.log
+*.tlog
+*.idb
+*.pdb
+*.ilk
+*.meta
+*.obj
+*.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.vspscc
+*.vssscc
+.builds
+
+# Qt
+*.qm
+*.pro.user*
+*_qmlcache.qrc
+.qmake.stash
+
+# C++ objects and libs
+*.so
+*.so.*
+*.a
+*.la
+*.lib
+*.dll
+*.exe
+*.exp
+*.app
+*.dSYM
+
+# Backup files
+*~
+*.bak
+*.orig
+*.tmp
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary files
+/tmp/
